@@ -38,6 +38,7 @@ class OnboardingVC: UIViewController {
         if let arrQues = arrQuesitions {
             vc.arrQuesitions = arrQues
             self.navigationController?.pushViewController(vc, animated: true)
+            Utility.shared.lightHapticFeedBack()
         }
         
     }

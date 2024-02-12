@@ -62,6 +62,9 @@ class QuizVC: UIViewController {
         selectedAns = false
         if isCorrectAns {
             countCorrectAns += 1
+            Utility.shared.lightHapticFeedBack()
+        }else{
+            Utility.shared.heavyHapticFeedBack()
         }
         
         print(index)

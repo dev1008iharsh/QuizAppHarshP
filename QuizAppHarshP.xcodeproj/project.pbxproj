@@ -16,6 +16,8 @@
 		042EAF862B789F26002BCCEF /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF822B789F26002BCCEF /* OnboardingVC.swift */; };
 		042EAF872B789F26002BCCEF /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF842B789F26002BCCEF /* QuestionModel.swift */; };
 		0433702B2B78FA3E001178D6 /* AnswersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433702A2B78FA3E001178D6 /* AnswersVC.swift */; };
+		044A3B342B79E61C007030C3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A3B332B79E61C007030C3 /* Utility.swift */; };
+		044A3B372B79E65B007030C3 /* HapticFeebacl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A3B362B79E65B007030C3 /* HapticFeebacl+Extension.swift */; };
 		04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76E2B78E7A20086C602 /* QuizVC.swift */; };
 		04E3D7722B78E7A20086C602 /* QuizCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76F2B78E7A20086C602 /* QuizCVC.swift */; };
 		04E3D7732B78E7A20086C602 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D7702B78E7A20086C602 /* ResultVC.swift */; };
@@ -38,6 +40,8 @@
 		042EAF822B789F26002BCCEF /* OnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		042EAF842B789F26002BCCEF /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		0433702A2B78FA3E001178D6 /* AnswersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersVC.swift; sourceTree = "<group>"; };
+		044A3B332B79E61C007030C3 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		044A3B362B79E65B007030C3 /* HapticFeebacl+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HapticFeebacl+Extension.swift"; sourceTree = "<group>"; };
 		04E3D76E2B78E7A20086C602 /* QuizVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
 		04E3D76F2B78E7A20086C602 /* QuizCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCVC.swift; sourceTree = "<group>"; };
 		04E3D7702B78E7A20086C602 /* ResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				042EAF882B789F2A002BCCEF /* Application */,
 				04E3D76D2B78E6E80086C602 /* Storyboard */,
 				042EAF812B789F26002BCCEF /* Controller */,
+				044A3B322B79E60B007030C3 /* Helper */,
+				044A3B352B79E64C007030C3 /* Extensions */,
 				042EAF832B789F26002BCCEF /* Model */,
 				042EAF7F2B789F26002BCCEF /* ViewModel */,
 				042EAF892B789F36002BCCEF /* Resources */,
@@ -141,6 +147,22 @@
 				04E3D76F2B78E7A20086C602 /* QuizCVC.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		044A3B322B79E60B007030C3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				044A3B332B79E61C007030C3 /* Utility.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		044A3B352B79E64C007030C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				044A3B362B79E65B007030C3 /* HapticFeebacl+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		04E3D76D2B78E6E80086C602 /* Storyboard */ = {
@@ -240,11 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044A3B342B79E61C007030C3 /* Utility.swift in Sources */,
 				0433702B2B78FA3E001178D6 /* AnswersVC.swift in Sources */,
 				042EAF862B789F26002BCCEF /* OnboardingVC.swift in Sources */,
 				042EAF6C2B789D71002BCCEF /* AppDelegate.swift in Sources */,
 				042EAF872B789F26002BCCEF /* QuestionModel.swift in Sources */,
 				04E3D7732B78E7A20086C602 /* ResultVC.swift in Sources */,
+				044A3B372B79E65B007030C3 /* HapticFeebacl+Extension.swift in Sources */,
 				04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */,
 				042EAF852B789F26002BCCEF /* QueViewModel.swift in Sources */,
 				04E3D7722B78E7A20086C602 /* QuizCVC.swift in Sources */,
