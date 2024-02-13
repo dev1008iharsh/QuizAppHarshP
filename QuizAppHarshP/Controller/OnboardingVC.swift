@@ -10,6 +10,7 @@ import UIKit
 class OnboardingVC: UIViewController {
 
     
+    @IBOutlet weak var viewAdMine: UIView!
     @IBOutlet weak var btnPlay: UIButton! {
         didSet {
             btnPlay.layer.cornerRadius = btnPlay.frame.height/2
@@ -25,12 +26,17 @@ class OnboardingVC: UIViewController {
     var viewModel = QueViewModel()
     var arrQuesitions :  [Questions]?
     
+    var adManager: GoogleBannerAdManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewModel.fetchQuestions { [weak self] in
             self?.arrQuesitions = self?.viewModel.queData?.data?.questions
         }
+        adManager = GoogleBannerAdManager(presentingView: self.view)
+        adManager.loadAd()
+        adManager.addBannerToView()
     }
     
     @IBAction func btnPlayTapped(_ sender: Any) {
