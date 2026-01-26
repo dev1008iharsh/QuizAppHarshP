@@ -34,7 +34,7 @@ final class GoogleAdClassManager: NSObject, FullScreenContentDelegate {
     // MARK: - Initialization
     private override init() {
         super.init()
-        
+        MobileAds.shared.requestConfiguration.testDeviceIdentifiers = [ "e02f5ffcca7e01a7e95a18dc23a1265f" ]
         // Initialize the Google Mobile Ads SDK
         MobileAds.shared.start(completionHandler: nil)
         
