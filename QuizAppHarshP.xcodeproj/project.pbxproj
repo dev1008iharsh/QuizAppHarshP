@@ -16,7 +16,8 @@
 		042EAF862B789F26002BCCEF /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF822B789F26002BCCEF /* OnboardingVC.swift */; };
 		042EAF872B789F26002BCCEF /* QuizResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF842B789F26002BCCEF /* QuizResponse.swift */; };
 		0433702B2B78FA3E001178D6 /* AnswersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433702A2B78FA3E001178D6 /* AnswersVC.swift */; };
-		044A3B342B79E61C007030C3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A3B332B79E61C007030C3 /* Utility.swift */; };
+		044D7E8E2F27FC3D00423984 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 044D7E8D2F27FC3D00423984 /* GoogleMobileAds */; };
+		0452839E2F27F68B0035861C /* GoogleAdClassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452839D2F27F68B0035861C /* GoogleAdClassManager.swift */; };
 		047344132F27E721009A74F2 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047344122F27E720009A74F2 /* HapticManager.swift */; };
 		04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76E2B78E7A20086C602 /* QuizVC.swift */; };
 		04E3D7722B78E7A20086C602 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */; };
@@ -40,7 +41,7 @@
 		042EAF822B789F26002BCCEF /* OnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		042EAF842B789F26002BCCEF /* QuizResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizResponse.swift; sourceTree = "<group>"; };
 		0433702A2B78FA3E001178D6 /* AnswersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersVC.swift; sourceTree = "<group>"; };
-		044A3B332B79E61C007030C3 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		0452839D2F27F68B0035861C /* GoogleAdClassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdClassManager.swift; sourceTree = "<group>"; };
 		047344122F27E720009A74F2 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		04E3D76E2B78E7A20086C602 /* QuizVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
 		04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044D7E8E2F27FC3D00423984 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +89,6 @@
 				042EAF7F2B789F26002BCCEF /* ViewModels */,
 				0473440F2F27E613009A74F2 /* Views */,
 				042EAF812B789F26002BCCEF /* Controllers(View Controllers) */,
-				047344112F27E662009A74F2 /* Utilities */,
 				042EAF892B789F36002BCCEF /* Resources */,
 				04E3D76D2B78E6E80086C602 /* Storyboard */,
 				042EAF882B789F2A002BCCEF /* Application */,
@@ -144,6 +145,7 @@
 		0465E18D2B7B3EF6006B9662 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				0452839D2F27F68B0035861C /* GoogleAdClassManager.swift */,
 				047344122F27E720009A74F2 /* HapticManager.swift */,
 			);
 			path = Manager;
@@ -163,14 +165,6 @@
 				04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		047344112F27E662009A74F2 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				044A3B332B79E61C007030C3 /* Utility.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		04E3D76D2B78E6E80086C602 /* Storyboard */ = {
@@ -211,6 +205,7 @@
 			);
 			name = QuizAppHarshP;
 			packageProductDependencies = (
+				044D7E8D2F27FC3D00423984 /* GoogleMobileAds */,
 			);
 			productName = QuizAppHarshP;
 			productReference = 042EAF682B789D71002BCCEF /* QuizAppHarshP.app */;
@@ -241,6 +236,7 @@
 			);
 			mainGroup = 042EAF5F2B789D71002BCCEF;
 			packageReferences = (
+				044D7E8C2F27FC3D00423984 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 042EAF692B789D71002BCCEF /* Products */;
 			projectDirPath = "";
@@ -274,12 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044A3B342B79E61C007030C3 /* Utility.swift in Sources */,
 				0433702B2B78FA3E001178D6 /* AnswersVC.swift in Sources */,
 				042EAF862B789F26002BCCEF /* OnboardingVC.swift in Sources */,
 				042EAF6C2B789D71002BCCEF /* AppDelegate.swift in Sources */,
 				042EAF872B789F26002BCCEF /* QuizResponse.swift in Sources */,
 				04E3D7732B78E7A20086C602 /* ResultVC.swift in Sources */,
+				0452839E2F27F68B0035861C /* GoogleAdClassManager.swift in Sources */,
 				04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */,
 				042EAF852B789F26002BCCEF /* QuizViewModel.swift in Sources */,
 				047344132F27E721009A74F2 /* HapticManager.swift in Sources */,
@@ -438,8 +434,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuizAppHarshP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -455,6 +452,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quizApp.QuizAppHarshP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -470,8 +468,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuizAppHarshP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -487,6 +486,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quizApp.QuizAppHarshP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -519,6 +519,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		044D7E8C2F27FC3D00423984 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		044D7E8D2F27FC3D00423984 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 044D7E8C2F27FC3D00423984 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 042EAF602B789D71002BCCEF /* Project object */;
 }

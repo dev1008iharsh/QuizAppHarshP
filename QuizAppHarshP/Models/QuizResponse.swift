@@ -1,7 +1,7 @@
 //
 //  QuizResponse
 //  Created by My Mac Mini on 11/02/24.
-//
+// App ID : ca-app-pub-1571000691962465~5595046683
 
 import Foundation
 

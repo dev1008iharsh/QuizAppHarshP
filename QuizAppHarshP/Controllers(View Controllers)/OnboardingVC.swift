@@ -5,28 +5,38 @@
 //  Created by My Mac Mini on 11/02/24.
 //
 
+import GoogleMobileAds
 import UIKit
 
 class OnboardingVC: UIViewController {
+    
     // MARK: - Outlets
 
     @IBOutlet var btnPlay: UIButton!
     @IBOutlet var btnRules: UIButton!
+
+    @IBOutlet var bannerView: BannerView!
 
     // MARK: - Properties
 
     private let viewModel = QuizViewModel()
     private var questions: [Question] = []
 
-    var activityIndicator: UIActivityIndicatorView!
-
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
         loadData()
+        setupAd()
+    }
+
+    // MARK: - Ad Configuration
+
+    private func setupAd() {
+        // We delegate all the heavy lifting to our Manager class.
+        // This keeps our View Controller clean and focused.
+        GoogleAdClassManager.shared.loadBanner(in: bannerView, rootVC: self)
     }
 
     // MARK: - Setup
@@ -43,8 +53,9 @@ class OnboardingVC: UIViewController {
 
     private func loadData() {
         // 'Task' is used to bridge async/await with synchronous viewDidLoad
-        Task {
+        Task { [weak self] in
             do {
+                guard let self else { return }
                 // Fetch data on background thread automatically
                 let fetchedQuestions = try await viewModel.fetchQuestions()
 
