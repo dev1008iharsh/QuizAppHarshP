@@ -12,16 +12,14 @@
 		042EAF732B789D71002BCCEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042EAF712B789D71002BCCEF /* Main.storyboard */; };
 		042EAF752B789D73002BCCEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042EAF742B789D73002BCCEF /* Assets.xcassets */; };
 		042EAF782B789D73002BCCEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042EAF762B789D73002BCCEF /* LaunchScreen.storyboard */; };
-		042EAF852B789F26002BCCEF /* QueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF802B789F26002BCCEF /* QueViewModel.swift */; };
+		042EAF852B789F26002BCCEF /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF802B789F26002BCCEF /* QuizViewModel.swift */; };
 		042EAF862B789F26002BCCEF /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF822B789F26002BCCEF /* OnboardingVC.swift */; };
-		042EAF872B789F26002BCCEF /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF842B789F26002BCCEF /* QuestionModel.swift */; };
+		042EAF872B789F26002BCCEF /* QuizResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EAF842B789F26002BCCEF /* QuizResponse.swift */; };
 		0433702B2B78FA3E001178D6 /* AnswersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433702A2B78FA3E001178D6 /* AnswersVC.swift */; };
 		044A3B342B79E61C007030C3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A3B332B79E61C007030C3 /* Utility.swift */; };
-		044A3B372B79E65B007030C3 /* HapticFeebacl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A3B362B79E65B007030C3 /* HapticFeebacl+Extension.swift */; };
-		0465E18C2B7B3EDA006B9662 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 0465E18B2B7B3EDA006B9662 /* GoogleMobileAds */; };
-		0465E18F2B7B3F37006B9662 /* GoogleBannerAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465E18E2B7B3F37006B9662 /* GoogleBannerAdManager.swift */; };
+		047344132F27E721009A74F2 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047344122F27E720009A74F2 /* HapticManager.swift */; };
 		04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76E2B78E7A20086C602 /* QuizVC.swift */; };
-		04E3D7722B78E7A20086C602 /* QuizCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76F2B78E7A20086C602 /* QuizCVC.swift */; };
+		04E3D7722B78E7A20086C602 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */; };
 		04E3D7732B78E7A20086C602 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D7702B78E7A20086C602 /* ResultVC.swift */; };
 		04E3D77A2B78E91F0086C602 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04E3D7752B78E91F0086C602 /* Quicksand-Light.ttf */; };
 		04E3D77B2B78E91F0086C602 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04E3D7762B78E91F0086C602 /* Quicksand-Medium.ttf */; };
@@ -38,15 +36,14 @@
 		042EAF742B789D73002BCCEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042EAF772B789D73002BCCEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042EAF792B789D73002BCCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		042EAF802B789F26002BCCEF /* QueViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueViewModel.swift; sourceTree = "<group>"; };
+		042EAF802B789F26002BCCEF /* QuizViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
 		042EAF822B789F26002BCCEF /* OnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
-		042EAF842B789F26002BCCEF /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		042EAF842B789F26002BCCEF /* QuizResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizResponse.swift; sourceTree = "<group>"; };
 		0433702A2B78FA3E001178D6 /* AnswersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersVC.swift; sourceTree = "<group>"; };
 		044A3B332B79E61C007030C3 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		044A3B362B79E65B007030C3 /* HapticFeebacl+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HapticFeebacl+Extension.swift"; sourceTree = "<group>"; };
-		0465E18E2B7B3F37006B9662 /* GoogleBannerAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBannerAdManager.swift; sourceTree = "<group>"; };
+		047344122F27E720009A74F2 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		04E3D76E2B78E7A20086C602 /* QuizVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
-		04E3D76F2B78E7A20086C602 /* QuizCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCVC.swift; sourceTree = "<group>"; };
+		04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		04E3D7702B78E7A20086C602 /* ResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		04E3D7752B78E91F0086C602 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		04E3D7762B78E91F0086C602 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
@@ -60,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0465E18C2B7B3EDA006B9662 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,45 +83,44 @@
 			isa = PBXGroup;
 			children = (
 				0465E18D2B7B3EF6006B9662 /* Manager */,
-				042EAF882B789F2A002BCCEF /* Application */,
-				04E3D76D2B78E6E80086C602 /* Storyboard */,
-				042EAF812B789F26002BCCEF /* Controller */,
-				044A3B322B79E60B007030C3 /* Helper */,
-				044A3B352B79E64C007030C3 /* Extensions */,
-				042EAF832B789F26002BCCEF /* Model */,
-				042EAF7F2B789F26002BCCEF /* ViewModel */,
+				042EAF832B789F26002BCCEF /* Models */,
+				042EAF7F2B789F26002BCCEF /* ViewModels */,
+				0473440F2F27E613009A74F2 /* Views */,
+				042EAF812B789F26002BCCEF /* Controllers(View Controllers) */,
+				047344112F27E662009A74F2 /* Utilities */,
 				042EAF892B789F36002BCCEF /* Resources */,
+				04E3D76D2B78E6E80086C602 /* Storyboard */,
+				042EAF882B789F2A002BCCEF /* Application */,
 				042EAF792B789D73002BCCEF /* Info.plist */,
 			);
 			path = QuizAppHarshP;
 			sourceTree = "<group>";
 		};
-		042EAF7F2B789F26002BCCEF /* ViewModel */ = {
+		042EAF7F2B789F26002BCCEF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				042EAF802B789F26002BCCEF /* QueViewModel.swift */,
+				042EAF802B789F26002BCCEF /* QuizViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		042EAF812B789F26002BCCEF /* Controller */ = {
+		042EAF812B789F26002BCCEF /* Controllers(View Controllers) */ = {
 			isa = PBXGroup;
 			children = (
 				042EAF822B789F26002BCCEF /* OnboardingVC.swift */,
 				04E3D76E2B78E7A20086C602 /* QuizVC.swift */,
 				04E3D7702B78E7A20086C602 /* ResultVC.swift */,
 				0433702A2B78FA3E001178D6 /* AnswersVC.swift */,
-				043370292B78F335001178D6 /* Cell */,
 			);
-			path = Controller;
+			path = "Controllers(View Controllers)";
 			sourceTree = "<group>";
 		};
-		042EAF832B789F26002BCCEF /* Model */ = {
+		042EAF832B789F26002BCCEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				042EAF842B789F26002BCCEF /* QuestionModel.swift */,
+				042EAF842B789F26002BCCEF /* QuizResponse.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		042EAF882B789F2A002BCCEF /* Application */ = {
@@ -146,36 +141,36 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		043370292B78F335001178D6 /* Cell */ = {
+		0465E18D2B7B3EF6006B9662 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				04E3D76F2B78E7A20086C602 /* QuizCVC.swift */,
+				047344122F27E720009A74F2 /* HapticManager.swift */,
 			);
-			path = Cell;
+			path = Manager;
 			sourceTree = "<group>";
 		};
-		044A3B322B79E60B007030C3 /* Helper */ = {
+		0473440F2F27E613009A74F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				047344102F27E625009A74F2 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		047344102F27E625009A74F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		047344112F27E662009A74F2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				044A3B332B79E61C007030C3 /* Utility.swift */,
 			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		044A3B352B79E64C007030C3 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				044A3B362B79E65B007030C3 /* HapticFeebacl+Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0465E18D2B7B3EF6006B9662 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				0465E18E2B7B3F37006B9662 /* GoogleBannerAdManager.swift */,
-			);
-			path = Manager;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		04E3D76D2B78E6E80086C602 /* Storyboard */ = {
@@ -216,7 +211,6 @@
 			);
 			name = QuizAppHarshP;
 			packageProductDependencies = (
-				0465E18B2B7B3EDA006B9662 /* GoogleMobileAds */,
 			);
 			productName = QuizAppHarshP;
 			productReference = 042EAF682B789D71002BCCEF /* QuizAppHarshP.app */;
@@ -230,7 +224,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					042EAF672B789D71002BCCEF = {
 						CreatedOnToolsVersion = 15.2;
@@ -247,7 +241,6 @@
 			);
 			mainGroup = 042EAF5F2B789D71002BCCEF;
 			packageReferences = (
-				0465E18A2B7B3EDA006B9662 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 042EAF692B789D71002BCCEF /* Products */;
 			projectDirPath = "";
@@ -285,13 +278,12 @@
 				0433702B2B78FA3E001178D6 /* AnswersVC.swift in Sources */,
 				042EAF862B789F26002BCCEF /* OnboardingVC.swift in Sources */,
 				042EAF6C2B789D71002BCCEF /* AppDelegate.swift in Sources */,
-				042EAF872B789F26002BCCEF /* QuestionModel.swift in Sources */,
+				042EAF872B789F26002BCCEF /* QuizResponse.swift in Sources */,
 				04E3D7732B78E7A20086C602 /* ResultVC.swift in Sources */,
-				044A3B372B79E65B007030C3 /* HapticFeebacl+Extension.swift in Sources */,
 				04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */,
-				042EAF852B789F26002BCCEF /* QueViewModel.swift in Sources */,
-				0465E18F2B7B3F37006B9662 /* GoogleBannerAdManager.swift in Sources */,
-				04E3D7722B78E7A20086C602 /* QuizCVC.swift in Sources */,
+				042EAF852B789F26002BCCEF /* QuizViewModel.swift in Sources */,
+				047344132F27E721009A74F2 /* HapticManager.swift in Sources */,
+				04E3D7722B78E7A20086C602 /* QuizCollectionViewCell.swift in Sources */,
 				042EAF6E2B789D71002BCCEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +345,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4N63T7C9Y8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -376,6 +369,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -416,6 +410,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4N63T7C9Y8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -432,6 +427,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -444,7 +440,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4N63T7C9Y8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuizAppHarshP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -452,6 +447,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +472,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4N63T7C9Y8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuizAppHarshP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -484,6 +479,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,25 +519,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0465E18A2B7B3EDA006B9662 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0465E18B2B7B3EDA006B9662 /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0465E18A2B7B3EDA006B9662 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 042EAF602B789D71002BCCEF /* Project object */;
 }
