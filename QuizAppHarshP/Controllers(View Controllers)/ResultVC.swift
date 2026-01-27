@@ -42,36 +42,34 @@ class ResultVC: UIViewController {
         // Logic: Green for pass (more than 50%), Red for fail
         if finalScore > (questions.count / 2) {
             resultLabel.textColor = .systemGreen
-            HapticManager.shared.lightImpact()
         } else {
             resultLabel.textColor = .systemRed
-            HapticManager.shared.heavyImpact()
         }
     }
 
     // MARK: - Actions
     
     @IBAction func btnRestartTapped(_ sender: Any) {
+        HapticManager.shared.heavyImpact()
         // Show Interstitial Ad -> Then Navigate to Home
         GoogleAdClassManager.shared.showInterstitial(from: self) { [weak self] in
             self?.navigationController?.popToRootViewController(animated: true)
         }
     }
-    
+     
     @IBAction func btnAnswersTapped(_ sender: Any) {
         HapticManager.shared.lightImpact()
         
-        // Request to show Rewarded Ad
         GoogleAdClassManager.shared.showRewardedAd(from: self, onReward: { [weak self] in
-            
             // Success: User watched video -> Navigate
             print("🎉 Video watched! Navigating to Answers...")
             self?.navigateToAnswersVC()
             
         }, onAdNotReady: { [weak self] in
-            
-            // Failure: Ad not ready -> Show Alert (Strict Mode)
-            self?.showAdNotReadyAlert()
+            // This rarely happens here because we checked first,
+            // but just in case, let them go.
+            print("⚠️ Ad not ready. Letting user pass for free to avoid Apple Rejection.")
+            self?.navigateToAnswersVC()
         })
     }
     
@@ -82,10 +80,5 @@ class ResultVC: UIViewController {
         answersVC.questions = self.questions
         navigationController?.pushViewController(answersVC, animated: true)
     }
-    
-    private func showAdNotReadyAlert() {
-        let alert = UIAlertController(title: "Loading Ad...", message: "Please wait a moment while we load the video.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
-    }
+     
 }

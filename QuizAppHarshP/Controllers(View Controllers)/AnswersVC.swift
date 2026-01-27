@@ -25,7 +25,7 @@ class AnswersVC: UIViewController {
     var questions: [Question] = [] // Raw Data passed from QuizVC
     
     // The mixed data source for the table
-    var tableData: [ListItem] = []
+    var arrListItems: [ListItem] = []
     
     private let cellIdentifier = "MyCell"
     private let adCellIdentifier = "NativeAdCell"
@@ -64,8 +64,12 @@ class AnswersVC: UIViewController {
     
     // MARK: - Data Logic
     func prepareTableData() {
-        tableData = questions.map { ListItem.question($0) }
-        tblAnswers.reloadData()
+        // 1. Transform the 'questions' array (Raw Data) into a 'ListItem' array (Enum Wrapper)
+        // 2. The .map function iterates through each question and wraps it in the .question case
+        // 3. This allows the TableView to handle different types of cells (Question vs. Ad) in the same list
+ 
+        arrListItems = questions.map { ListItem.question($0) }
+ 
     }
     
     func loadNativeAds() {
@@ -75,7 +79,67 @@ class AnswersVC: UIViewController {
             self.insertAdsIntoList()
         }
     }
+   
+    func insertAdsIntoList() {
+        // 1. Retrieve loaded ads from the manager
+        let loadedAds = GoogleAdClassManager.shared.nativeAds
+        
+        // 2. Safety check: If no ads are available, just reload to show questions and exit
+        guard !loadedAds.isEmpty else {
+            tblAnswers.reloadData()
+            return
+        }
+        
+        // 3. Keep a reference of the current list before updating
+        let oldListCount = arrListItems.count
+        var mixedList: [ListItem] = []
+        var adIndex = 0
+        
+        // 4. Re-calculate the mixed list (Questions + Ads)
+        for (index, question) in questions.enumerated() {
+            mixedList.append(.question(question))
+            
+            // Logic: Insert ad after every 4th question
+            if (index + 1) % 4 == 0 && adIndex < loadedAds.count {
+                mixedList.append(.ad(loadedAds[adIndex]))
+                adIndex += 1
+            }
+        }
+        
+        // 5. Identify the exact IndexPaths where ads are being injected
+        // We compare the new list against the old count to find new positions
+        var indexPathsToInsert: [IndexPath] = []
+        for (newIndex, item) in mixedList.enumerated() {
+            if case .ad = item {
+                // Add this index to our animation list
+                indexPathsToInsert.append(IndexPath(row: newIndex, section: 0))
+            }
+        }
+        
+        // 6. Update the data source
+        arrListItems = mixedList
+        
+        // 7. Perform Batch Updates for smooth middle-insertion animation
+        // If the table was empty (first load), we use reloadData.
+        // Otherwise, we use insertRows for the professional '.fade' effect.
+        if oldListCount > 0 && !indexPathsToInsert.isEmpty {
+            tblAnswers.performBatchUpdates({
+                tblAnswers.insertRows(at: indexPathsToInsert, with: .fade)
+            }, completion: nil)
+        } else {
+            tblAnswers.reloadData()
+        }
+    }
     
+    // MARK: - Actions
+    @IBAction func btnRestartTapped(_ sender: Any) {
+        HapticManager.shared.heavyImpact()
+        
+        GoogleAdClassManager.shared.showInterstitial(from: self) { [weak self] in
+            self?.navigationController?.popToRootViewController(animated: true)
+        }
+    }
+    /* TABLE RELOAD DATA LOGIC
     func insertAdsIntoList() {
         let loadedAds = GoogleAdClassManager.shared.nativeAds
         guard !loadedAds.isEmpty else { return }
@@ -96,26 +160,19 @@ class AnswersVC: UIViewController {
         
         self.tableData = mixedList
         self.tblAnswers.reloadData()
-    }
-    
-    // MARK: - Actions
-    @IBAction func btnRestartTapped(_ sender: Any) {
-        GoogleAdClassManager.shared.showInterstitial(from: self) { [weak self] in
-            self?.navigationController?.popToRootViewController(animated: true)
-        }
-    }
+    }*/
 }
 
 // MARK: - TableView Extensions
 extension AnswersVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.count
+        return arrListItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let item = tableData[indexPath.row]
+        let item = arrListItems[indexPath.row]
         
         switch item {
         case .question(let question):
@@ -151,7 +208,7 @@ extension AnswersVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            let item = tableData[indexPath.row]
+            let item = arrListItems[indexPath.row]
             switch item {
             case .question:
                 return UITableView.automaticDimension // Auto height for text

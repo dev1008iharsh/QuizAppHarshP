@@ -49,6 +49,7 @@ class QuizVC: UIViewController {
     // MARK: - UI Setup
 
     private func setupUI() {
+        bannerContainerView.backgroundColor = .clear
         btnNext.layer.cornerRadius = btnNext.frame.height / 2
         btnRestart.layer.cornerRadius = btnRestart.frame.height / 2
     }
@@ -70,6 +71,8 @@ class QuizVC: UIViewController {
     // MARK: - Actions
 
     @IBAction func btnNextTapped(_ sender: Any) {
+        HapticManager.shared.lightImpact()
+        
         guard hasSelectedAnswer else {
             showAlert(title: "Wait!", message: "Please select an answer before proceeding.")
             return
@@ -101,6 +104,7 @@ class QuizVC: UIViewController {
 
     // 🔥 FIXED RESTART ACTION
     @IBAction func btnRestartTapped(_ sender: Any) {
+        HapticManager.shared.heavyImpact()
         
         GoogleAdClassManager.shared.showInterstitial(from: self) { [weak self] in
 

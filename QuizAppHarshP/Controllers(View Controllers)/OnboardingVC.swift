@@ -42,6 +42,7 @@ class OnboardingVC: UIViewController {
     // MARK: - Setup
 
     private func setupUI() {
+        bannerView.backgroundColor = .clear
         btnPlay.layer.cornerRadius = btnPlay.frame.height / 2
         btnRules.layer.cornerRadius = btnRules.frame.height / 2
         // Disable play button until data is loaded
@@ -69,6 +70,8 @@ class OnboardingVC: UIViewController {
                 // Handle Error (Show Alert)
 
                 print("Failed to load questions: \(error)")
+                self?.showAlert(title: "Server not responding", message: "Failed to load questions: \(error)"
+                )
             }
         }
     }
@@ -76,15 +79,16 @@ class OnboardingVC: UIViewController {
     // MARK: - Actions
 
     @IBAction func btnPlayTapped(_ sender: Any) {
+        HapticManager.shared.lightImpact()
+        
         guard let quizVC = storyboard?.instantiateViewController(withIdentifier: "QuizVC") as? QuizVC else { return }
-
         quizVC.questions = questions
-        HapticManager.shared.lightImpact() // Using our optimized manager
         navigationController?.pushViewController(quizVC, animated: true)
     }
 
     @IBAction func btnRulesTapped(_ sender: Any) {
-        // Optimized Alert Helper usage
+        HapticManager.shared.lightImpact()
+        
         showAlert(title: "Rules", message: "1. Answer all questions.\n2. Restarting loses progress.\n3. Total 10 Questions.")
     }
 
