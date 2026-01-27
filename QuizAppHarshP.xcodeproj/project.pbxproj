@@ -19,6 +19,7 @@
 		044D7E8E2F27FC3D00423984 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 044D7E8D2F27FC3D00423984 /* GoogleMobileAds */; };
 		0452839E2F27F68B0035861C /* GoogleAdClassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452839D2F27F68B0035861C /* GoogleAdClassManager.swift */; };
 		047344132F27E721009A74F2 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047344122F27E720009A74F2 /* HapticManager.swift */; };
+		049684C12F28935B005C04DD /* NativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049684C02F289357005C04DD /* NativeAdCell.swift */; };
 		04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76E2B78E7A20086C602 /* QuizVC.swift */; };
 		04E3D7722B78E7A20086C602 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */; };
 		04E3D7732B78E7A20086C602 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D7702B78E7A20086C602 /* ResultVC.swift */; };
@@ -43,6 +44,7 @@
 		0433702A2B78FA3E001178D6 /* AnswersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersVC.swift; sourceTree = "<group>"; };
 		0452839D2F27F68B0035861C /* GoogleAdClassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdClassManager.swift; sourceTree = "<group>"; };
 		047344122F27E720009A74F2 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		049684C02F289357005C04DD /* NativeAdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdCell.swift; sourceTree = "<group>"; };
 		04E3D76E2B78E7A20086C602 /* QuizVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
 		04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		04E3D7702B78E7A20086C602 /* ResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		0473440F2F27E613009A74F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				049684BF2F28934E005C04DD /* Google Ad Cell */,
 				047344102F27E625009A74F2 /* Cells */,
 			);
 			path = Views;
@@ -165,6 +168,14 @@
 				04E3D76F2B78E7A20086C602 /* QuizCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		049684BF2F28934E005C04DD /* Google Ad Cell */ = {
+			isa = PBXGroup;
+			children = (
+				049684C02F289357005C04DD /* NativeAdCell.swift */,
+			);
+			path = "Google Ad Cell";
 			sourceTree = "<group>";
 		};
 		04E3D76D2B78E6E80086C602 /* Storyboard */ = {
@@ -276,6 +287,7 @@
 				042EAF872B789F26002BCCEF /* QuizResponse.swift in Sources */,
 				04E3D7732B78E7A20086C602 /* ResultVC.swift in Sources */,
 				0452839E2F27F68B0035861C /* GoogleAdClassManager.swift in Sources */,
+				049684C12F28935B005C04DD /* NativeAdCell.swift in Sources */,
 				04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */,
 				042EAF852B789F26002BCCEF /* QuizViewModel.swift in Sources */,
 				047344132F27E721009A74F2 /* HapticManager.swift in Sources */,
