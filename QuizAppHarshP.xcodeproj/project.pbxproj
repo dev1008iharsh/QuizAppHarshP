@@ -18,6 +18,7 @@
 		0433702B2B78FA3E001178D6 /* AnswersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433702A2B78FA3E001178D6 /* AnswersVC.swift */; };
 		044D7E8E2F27FC3D00423984 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 044D7E8D2F27FC3D00423984 /* GoogleMobileAds */; };
 		0452839E2F27F68B0035861C /* GoogleAdClassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452839D2F27F68B0035861C /* GoogleAdClassManager.swift */; };
+		046FF2812F29EDBA00820B0C /* CommetedCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FF2802F29EDB500820B0C /* CommetedCode.swift */; };
 		047344132F27E721009A74F2 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047344122F27E720009A74F2 /* HapticManager.swift */; };
 		049684C12F28935B005C04DD /* NativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049684C02F289357005C04DD /* NativeAdCell.swift */; };
 		04E3D7712B78E7A20086C602 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D76E2B78E7A20086C602 /* QuizVC.swift */; };
@@ -43,6 +44,7 @@
 		042EAF842B789F26002BCCEF /* QuizResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizResponse.swift; sourceTree = "<group>"; };
 		0433702A2B78FA3E001178D6 /* AnswersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersVC.swift; sourceTree = "<group>"; };
 		0452839D2F27F68B0035861C /* GoogleAdClassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdClassManager.swift; sourceTree = "<group>"; };
+		046FF2802F29EDB500820B0C /* CommetedCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommetedCode.swift; sourceTree = "<group>"; };
 		047344122F27E720009A74F2 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		049684C02F289357005C04DD /* NativeAdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdCell.swift; sourceTree = "<group>"; };
 		04E3D76E2B78E7A20086C602 /* QuizVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		042EAF812B789F26002BCCEF /* Controllers(View Controllers) */ = {
 			isa = PBXGroup;
 			children = (
+				046FF2802F29EDB500820B0C /* CommetedCode.swift */,
 				042EAF822B789F26002BCCEF /* OnboardingVC.swift */,
 				04E3D76E2B78E7A20086C602 /* QuizVC.swift */,
 				04E3D7702B78E7A20086C602 /* ResultVC.swift */,
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046FF2812F29EDBA00820B0C /* CommetedCode.swift in Sources */,
 				0433702B2B78FA3E001178D6 /* AnswersVC.swift in Sources */,
 				042EAF862B789F26002BCCEF /* OnboardingVC.swift in Sources */,
 				042EAF6C2B789D71002BCCEF /* AppDelegate.swift in Sources */,
