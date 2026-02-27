@@ -1,10 +1,6 @@
 # 🧠 QuizAppHarsh — Dynamic Quiz App (UIKit • MVVM • AdMob)
-
-![abcdefg](https://github.com/dev1008iharsh/QuizAppHarshP/assets/155307551/075f2ad4-e7eb-4140-84fa-2ac9027ab2da)
-
-![avcde](https://github.com/dev1008iharsh/QuizAppHarshP/assets/155307551/9d79016c-16c0-4ffc-8f68-1b23a3b8fcd2)
-
-
+ 
+<img width="846" height="451" alt="Screenshot 2026-02-27 at 2 27 35 PM" src="https://github.com/user-attachments/assets/2206de65-5c32-4b15-9375-62349739ff90" />
 
 Production-style, server-driven quiz application built using **Swift + UIKit** with a clean **MVVM architecture**.  
 Designed for real-time content delivery, scalable code structure, smooth UX, and integrated monetization.
