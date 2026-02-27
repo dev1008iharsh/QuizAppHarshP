@@ -1,12 +1,95 @@
-MVVM architecture pattern
-Application Management
-UI Design (Multiplier, Aspect Ratio)
-Closure
-Singleton Class
-Making View Tapable without tap gesture.
+# 🧠 QuizAppHarsh — Dynamic Quiz App (UIKit • MVVM • AdMob)
 
 ![abcdefg](https://github.com/dev1008iharsh/QuizAppHarshP/assets/155307551/075f2ad4-e7eb-4140-84fa-2ac9027ab2da)
 
 ![avcde](https://github.com/dev1008iharsh/QuizAppHarshP/assets/155307551/9d79016c-16c0-4ffc-8f68-1b23a3b8fcd2)
 
-The quiz app delivers dynamic quizzes sourced from a central server, offering fresh and diverse questions to users. Upon launching, users engage with an intuitive interface to begin quizzes. Progressing through multiple-choice or open-ended questions, users receive instant feedback on their answers. After completing the quiz, users receive a comprehensive breakdown of their score, including correct answers and performance statistics. The app fosters learning by allowing users to review their answers alongside the correct ones. Overall, it provides an interactive, educational experience, ideal for testing and enhancing knowledge across various subjects.
+
+
+Production-style, server-driven quiz application built using **Swift + UIKit** with a clean **MVVM architecture**.  
+Designed for real-time content delivery, scalable code structure, smooth UX, and integrated monetization.
+
+---
+
+## ✨ Key Capabilities
+
+- 🌐 Dynamic quizzes fetched from remote server  
+- 📊 Instant scoring, feedback, and performance analytics  
+- 🧩 Supports multiple question formats  
+- 🧠 Answer review with correct solutions  
+- ⚡ Smooth navigation with responsive UI  
+- 📱 Adaptive layouts across device sizes  
+- 🚀 Optimized for stability and performance  
+- 🆕 Compatible with modern iOS versions (iOS 26 ready)
+
+---
+
+## 💰 Monetization — Google Mobile Ads
+
+Fully integrated AdMob suite:
+
+- Banner Ads  
+- Interstitial Ads  
+- Rewarded Ads  
+- Native Ads  
+- App Open Ads  
+
+Implements controlled loading strategy to ensure **non-blocking user experience**.
+
+---
+
+## 🏗️ Architecture & Engineering
+
+- MVVM Architecture for scalability  
+- Closure-based ViewModel communication  
+- Singleton pattern for shared resources  
+- Modular and maintainable codebase  
+- Production-style separation of concerns  
+
+---
+
+## 🎨 UI & Interaction
+
+- Adaptive Auto Layout using multipliers & aspect ratios  
+- Fully programmatic UIKit interface  
+- Tappable UI components without gesture recognizers  
+- Lightweight animations and smooth transitions  
+- Consistent UX across devices  
+
+---
+
+## 🧰 Technology Stack
+
+Swift • UIKit • MVVM • URLSession • AdMob SDK • Auto Layout  
+
+---
+
+## 📦 Repositories
+
+▶ **Primary Repository**  
+https://github.com/dev1008iharsh/QuizAppHarsh  
+
+▶ **Alternate Version**  
+https://github.com/dev1008iharsh/QuizAppHarshP  
+
+---
+
+## 📬 Contact & Portfolio
+
+**Email:** dev.iharsh1008@gmail.com  
+**Phone:** +91 9662108047  
+
+▶ **Portfolio Website**  
+https://dev1008iharsh.github.io/  
+
+▶ **LinkedIn Profile**  
+https://www.linkedin.com/in/dev1008iharsh/  
+
+▶ **GitHub Repositories**  
+https://github.com/dev1008iharsh?tab=repositories  
+
+---
+
+## ⭐ Why This Project Matters
+
+Demonstrates real-world iOS engineering practices including scalable architecture, server-driven content, monetization integration, and performance-focused design suitable for production environments.
